@@ -1,0 +1,19 @@
+/* utilities.css */ 
+.main-content {
+  margin-left: 40%;
+  width: 60%;
+  padding: 40px;
+}
+
+.section {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}

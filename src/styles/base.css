@@ -1,0 +1,54 @@
+/* base.css */ 
+:root {
+  --primary-color: #009921;
+  --primary-hover: #0056b3;
+  --text-color: #fff;
+  --text-secondary: #a1a1a1;
+  --text-tertiary: #b1b1b1;
+  --text-quaternary: #c1c1c1;
+  --bg-color: #1a1a1a;
+  --card-bg: #f8f9fa;
+  --border-color: #e9ecef;
+  --section-bg: #2a2a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+}

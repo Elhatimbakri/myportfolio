@@ -1,0 +1,72 @@
+/* experience.css */  
+.experience-item {
+  display: flex;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.experience-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 1rem;
+  color: var(--text-tertiary);
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--text-quaternary);
+  margin-bottom: 15px;
+}
+
+.experience-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-content li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.experience-content li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+  }
+  
+  .company-logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+    align-self: flex-start;
+  }
+}
